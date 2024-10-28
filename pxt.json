@@ -1,5 +1,5 @@
 {
-    "name": "microbit-template-repo",
+    "name": "radio",
     "description": "",
     "dependencies": {
         "core": "*",
