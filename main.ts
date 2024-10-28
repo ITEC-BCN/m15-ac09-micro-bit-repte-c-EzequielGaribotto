@@ -1,9 +1,11 @@
-let numero_aleatorio = 0
+let numero_aleatorioA = 0
 let numero_aleatorioB = 0
 radio.onReceivedNumber(function (receivedNumber) {
-    numero_aleatorio = randint(1, 6)
-    if (numero_aleatorio < receivedNumber) {
+    numero_aleatorioA = randint(1, 6)
+    if (numero_aleatorioA < receivedNumber) {
         basic.showIcon(IconNames.Sad)
+    } else if (numero_aleatorioA == receivedNumber) {
+        basic.showIcon(IconNames.Asleep)
     } else {
         basic.showIcon(IconNames.Happy)
     }
